@@ -29,7 +29,7 @@
   <source src="https://github.com/liuliuqueen111/PersonalResume/blod/main/video.mp4" type="video/mp4">
   您的浏览器不支持 video 标签。
 </video>
-
+受视频大小限制，该视频目前无法直接在网页展示。感兴趣的朋友直接点击仓库里的video观看。
 ### 5. 性能优化部分
 
 - 🚀 我使用防抖和节流函数优化滚动性能、Intersection Observer API 懒加载动画；使用本地存储保存主题偏好和滚动位置，并处理了打印前后状态。

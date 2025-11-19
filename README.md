@@ -26,7 +26,7 @@
 ### 4.网页展示
 
 <video controls width="100%">
-  <source src="https://liuliuqueen111.github.io/PersonalResume/video.mp4" type="video/mp4">
+  <source src="https://github.com/liuliuqueen111/PersonalResume/raw/main/video.mp4" type="video/mp4">
   您的浏览器不支持 video 标签。
 </video>
 

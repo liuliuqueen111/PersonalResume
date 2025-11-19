@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人简历 - 柳昕彤</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 滚动进度指示器 -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- 顶部导航 -->
+  <nav class="resume-nav" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">简历</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#info">基本信息</a></li>
+        <li><a href="#education">教育经历</a></li>
+        <li><a href="#experience">项目经历</a></li>
+        <li><a href="#certificates">证书荣誉</a></li>
+        <li><a href="#contact">联系方式</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="菜单">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 主体内容 -->
+  <main class="resume-container">
+    <!-- 左侧栏：个人核心信息 -->
+    <aside class="resume-sidebar">
+      <!-- 头像区域 -->
+      <div class="avatar-box">
+        <div class="avatar-wrapper">
+          <img src="avatar.jpg" alt="个人头像" class="avatar">
+        </div>
+        <h1 class="name">柳昕彤</h1>
+        <p class="job-title">前端开发工程师</p>
+      </div>
+
+      <!-- 基本信息 -->
+      <section id="info" class="sidebar-section">
+        <h2 class="section-title">
+          <i class="fas fa-user-circle"></i>
+          基本信息
+        </h2>
+        <ul class="info-list">
+          <li>
+            <i class="fas fa-calendar-alt"></i>
+            <span>2005-06-28</span>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>天津市 津南区</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>2310364@mail.nankai.edu.cn</span>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <span>198-9335-2896</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 技能标签 -->
+      <section id="skills" class="sidebar-section">
+        <h2 class="section-title">
+          <i class="fas fa-code"></i>
+          核心技能
+        </h2>
+        <div class="skills-tags">
+          <span class="tag">HTML5/CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Vue</span>
+          <span class="tag">C++</span>
+          <span class="tag">Python</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Git</span>
+          <span class="tag">网络安全</span>
+        </div>
+
+        <!-- 技能熟练度 -->
+        <div class="skills-level">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>前端开发</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Python编程</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>深度学习</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 语言能力 -->
+      <section class="sidebar-section">
+        <h2 class="section-title">
+          <i class="fas fa-language"></i>
+          语言能力
+        </h2>
+        <ul class="info-list">
+          <li>
+            <i class="fas fa-certificate"></i>
+            <span>大学英语6级证书</span>
+          </li>
+          <li>
+            <i class="fas fa-comments"></i>
+            <span>能够熟练进行英语交流、读写</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 计算机技能 -->
+      <section class="sidebar-section">
+        <h2 class="section-title">
+          <i class="fas fa-laptop-code"></i>
+          计算机技能
+        </h2>
+        <div class="skills-desc">
+          <p>信息安全专业学生，熟练掌握C++、Java、JS等高级语言和反汇编等底层技术，掌握React框架和其他前端开发工具，具备全栈开发能力，也系统实践PyTorch/TensorFlow框架；熟练操作Windows平台上的各类应用软件，如Word、Excel。</p>
+        </div>
+      </section>
+
+      <!-- 团队能力 -->
+      <section class="sidebar-section">
+        <h2 class="section-title">
+          <i class="fas fa-users"></i>
+          团队能力
+        </h2>
+        <div class="skills-desc">
+          <p>具有丰富的团队组建与扩充经验和项目管理与协调经验。</p>
+        </div>
+      </section>
+
+      <!-- 联系方式 -->
+      <section id="contact" class="sidebar-section">
+        <h2 class="section-title">
+          <i class="fas fa-address-book"></i>
+          联系方式
+        </h2>
+        <div class="contact-links">
+          <a href="https://github.com/liuliuqueen111" target="_blank" class="contact-link">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/liuxintong" target="_blank" class="contact-link">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <div class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <span>2310364@mail.nankai.edu.cn</span>
+          </div>
+          <div class="contact-link">
+            <i class="fab fa-weixin"></i>
+            <span>lwz731809</span>
+          </div>
+        </div>
+      </section>
+    </aside>
+
+    <!-- 右侧栏：详细经历 -->
+    <div class="resume-main-content">
+      <!-- 个人简介 -->
+      <section class="content-section intro">
+        <h2 class="content-title">
+          <span>个人简介</span>
+          <div class="title-line"></div>
+        </h2>
+        <p class="intro-text">
+          南开大学信息安全专业本科生，具备扎实的前端开发基础和AI算法研究能力。
+          熟练掌握React/Vue等前端框架，参与开发nkuwiki微信小程序等项目；同时在深度学习和网络安全领域有深入研究，
+          牵头DUPA-net肺炎医学图像分割模型项目和恶意软件检测引擎开发，提升医学影像分割精准度和安全分析能力。
+          积极参与各类竞赛与科研项目，获得多项奖学金和竞赛奖项，具备良好的学习能力和团队协作精神。
+        </p>
+      </section>
+
+      <!-- 教育经历 -->
+      <section id="education" class="content-section education">
+        <h2 class="content-title">
+          <span>教育经历</span>
+          <div class="title-line"></div>
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">2023.09 - 2027.07</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">信息安全 | 本科</h3>
+              <p class="timeline-subtitle">南开大学 | GPA：3.7/4.0（专业前20%）</p>
+              <p class="timeline-desc">主修课程：计算机组成原理、数据结构、算法导论、数据可视化、互联网数据库开发、操作系统、计算机网络、高级语言程序设计、Python深度学习、机器学习等</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 项目经历 -->
+      <section id="experience" class="content-section experience">
+        <h2 class="content-title">
+          <span>项目经历</span>
+          <div class="title-line"></div>
+        </h2>
+        
+        <!-- 技能筛选标签 -->
+        <div class="project-filter">
+          <span class="filter-label">技能筛选：</span>
+          <div class="filter-tags">
+            <button class="filter-tag active" data-filter="all">全部</button>
+            <button class="filter-tag" data-filter="React">React</button>
+            <button class="filter-tag" data-filter="Vue">Vue</button>
+            <button class="filter-tag" data-filter="Taro">Taro</button>
+            <button class="filter-tag" data-filter="Python">Python</button>
+            <button class="filter-tag" data-filter="深度学习">深度学习</button>
+            <button class="filter-tag" data-filter="YARA">YARA</button>
+            <button class="filter-tag" data-filter="安全分析">安全分析</button>
+            <button class="filter-tag" data-filter="大模型">大模型</button>
+          </div>
+        </div>
+
+        <div class="project-list">
+          <!-- 项目1 -->
+          <div class="project-item" data-tech="Taro 小程序 React TypeScript">
+            <div class="project-header">
+              <div class="project-header-left">
+                <h3 class="project-title">
+                  <i class="fas fa-mobile-alt"></i>
+                  nkuwiki微信小程序开发
+                </h3>
+                <span class="project-date">
+                  <i class="far fa-calendar"></i>
+                  2025.05 - 至今
+                </span>
+              </div>
+              <button class="expand-btn" aria-label="展开/折叠">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="project-content">
+              <div class="project-role">
+                <i class="fas fa-user-tie"></i>
+                <strong>角色：</strong>前端工程师
+              </div>
+              <p class="project-desc">
+                基于Taro跨端框架特性，负责小程序整体页面架构设计与布局搭建，完成40+核心页面的UI实现，
+                保障页面风格统一与视觉体验优化；独立开发知识检索入口、AI问答交互界面、校园资源分类展示等核心功能模块；
+                配合产品经理梳理用户需求，参与交互原型评审，解决小程序在不同微信版本及设备上的兼容性问题。
+              </p>
+              <div class="project-tech">
+                <i class="fas fa-tools"></i>
+                <strong>技术栈：</strong>
+                <span class="tech-tags">
+                  <span class="tech-tag">Taro</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">微信小程序</span>
+                  <span class="tech-tag">跨端开发</span>
+                </span>
+              </div>
+              <div class="project-achieve">
+                <i class="fas fa-trophy"></i>
+                <strong>成果：</strong>完成40+核心页面开发，解决多版本兼容性问题，优化用户体验
+              </div>
+            </div>
+          </div>
+
+          <!-- 项目2 -->
+          <div class="project-item" data-tech="Python PyTorch 深度学习 医学影像">
+            <div class="project-header">
+              <div class="project-header-left">
+                <h3 class="project-title">
+                  <i class="fas fa-brain"></i>
+                  DUPA-net肺炎医学图像分割网络模型搭建和优化
+                </h3>
+                <span class="project-date">
+                  <i class="far fa-calendar"></i>
+                  2024.09 - 至今
+                </span>
+              </div>
+              <button class="expand-btn" aria-label="展开/折叠">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="project-content">
+              <div class="project-role">
+                <i class="fas fa-user-tie"></i>
+                <strong>角色：</strong>算法工程师/项目负责人
+              </div>
+              <p class="project-desc">
+                牵头开展CDAL条件扩散模型在医学影像分割领域的技术调研与可行性分析，创新性提出DUPA-net模型架构，
+                优化扩散过程中的条件约束机制，提升肺炎病灶区域分割的精准度；负责模型核心模块的搭建与参数调优，
+                引入注意力机制与特征融合策略，搭建模型训练与验证流程，处理5000+份临床肺炎影像数据集，
+                配合工程团队完成模型部署适配，提供技术文档与接口支持。
+              </p>
+              <div class="project-tech">
+                <i class="fas fa-tools"></i>
+                <strong>技术栈：</strong>
+                <span class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">PyTorch</span>
+                  <span class="tech-tag">深度学习</span>
+                  <span class="tech-tag">医学影像</span>
+                  <span class="tech-tag">扩散模型</span>
+                </span>
+              </div>
+              <div class="project-achieve">
+                <i class="fas fa-trophy"></i>
+                <strong>成果：</strong>处理5000+临床数据集，提升肺炎分割精准度，完成模型部署
+              </div>
+            </div>
+          </div>
+
+          <!-- 实习项目 -->
+          <div class="project-item" data-tech="Vue React 前端开发">
+            <div class="project-header">
+              <div class="project-header-left">
+                <h3 class="project-title">
+                  <i class="fas fa-graduation-cap"></i>
+                  清华大学水木心育家庭教育专家AI平台
+                </h3>
+                <span class="project-date">
+                  <i class="far fa-calendar"></i>
+                  2025.07 - 2025.09
+                </span>
+              </div>
+              <button class="expand-btn" aria-label="展开/折叠">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="project-content">
+              <div class="project-role">
+                <i class="fas fa-user-tie"></i>
+                <strong>角色：</strong>前端工程师（实习）
+              </div>
+              <p class="project-desc">
+                核心工作：负责家庭干预模块前端架构搭建与核心功能实现，采用Vue/React技术栈开发语音测评入口、
+                咨询会话界面及干预方案展示模块，适配G端教育机构与B端企业不同使用场景的界面需求；
+                独立完成30+页面组件开发，优化前端渲染性能，解决多终端适配兼容性问题，
+                配合后端工程师完成接口联调，参与需求评审与测试迭代，推动模块功能从原型到落地的全流程交付。
+              </p>
+              <div class="project-tech">
+                <i class="fas fa-tools"></i>
+                <strong>技术栈：</strong>
+                <span class="tech-tags">
+                  <span class="tech-tag">Vue</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">前端开发</span>
+                  <span class="tech-tag">组件化开发</span>
+                  <span class="tech-tag">响应式设计</span>
+                </span>
+              </div>
+              <div class="project-achieve">
+                <i class="fas fa-trophy"></i>
+                <strong>成果：</strong>完成30+页面组件开发，解决多终端适配，推动项目全流程交付
+              </div>
+            </div>
+          </div>
+
+          <!-- 恶意软件检测引擎项目 -->
+          <div class="project-item" data-tech="Python YARA Sigma 大模型 AI 安全分析">
+            <div class="project-header">
+              <div class="project-header-left">
+                <h3 class="project-title">
+                  <i class="fas fa-shield-alt"></i>
+                  恶意软件检测引擎开发
+                </h3>
+                <span class="project-date">
+                  <i class="far fa-calendar"></i>
+                  2025.09 - 至今
+                </span>
+              </div>
+              <button class="expand-btn" aria-label="展开/折叠">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="project-content">
+              <div class="project-role">
+                <i class="fas fa-user-tie"></i>
+                <strong>角色：</strong>核心开发者/项目负责人
+              </div>
+              <p class="project-desc">
+                开发了集成YARA规则和Sigma规则的恶意样本检测引擎，支持用户上传样本文件，
+                系统自动解析并生成详细的危害报告。实现了命令行、网页和图形化工具三种交互形式。
+                核心流程包括：用户上传文件/文件夹后递归提取所有待分析文件，文件并行进行静态和动态分析，
+                与特征模式库匹配输出恶意情况。创新性地引入大模型辅助分析：在分析前将样本基础结果上传大模型生成检测规则补充数据库，
+                最终将所有检测结果交给大模型辅助生成专业的恶意报告。目前聚焦于PC exe可执行文件和Android apk文件的检测。
+              </p>
+              <div class="project-tech">
+                <i class="fas fa-tools"></i>
+                <strong>技术栈：</strong>
+                <span class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">YARA</span>
+                  <span class="tech-tag">Sigma</span>
+                  <span class="tech-tag">大模型AI</span>
+                  <span class="tech-tag">Web开发</span>
+                  <span class="tech-tag">安全分析</span>
+                </span>
+              </div>
+              <div class="project-achieve">
+                <i class="fas fa-trophy"></i>
+                <strong>成果：</strong>实现多平台恶意软件检测，支持多种文件格式解析，AI辅助智能分析报告生成
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 证书荣誉 -->
+      <section id="certificates" class="content-section certificates">
+        <h2 class="content-title">
+          <span>证书荣誉</span>
+          <div class="title-line"></div>
+        </h2>
+        <div class="cert-list">
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="cert-info">
+              <h3>南开大学公能奖学金和"三好学生"荣誉称号</h3>
+              <p>
+                <i class="far fa-calendar-check"></i>
+                南开大学
+              </p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="cert-info">
+              <h3>南开大学创新奖学金</h3>
+              <p>
+                <i class="far fa-calendar-check"></i>
+                南开大学
+              </p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="cert-info">
+              <h3>2025AIGC创新赛三等奖</h3>
+              <p>
+                <i class="far fa-calendar-check"></i>
+                2025年
+              </p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="cert-info">
+              <h3>第十一届全国大学生医学创新大赛暨"一带一路"国际竞赛三等奖</h3>
+              <p>
+                <i class="far fa-calendar-check"></i>
+                全国竞赛
+              </p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="cert-info">
+              <h3>南开大学本科生创新科研"百项工程"</h3>
+              <p>
+                <i class="far fa-calendar-check"></i>
+                南开大学
+              </p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="cert-info">
+              <h3>南开大学第七届"校长杯"创新创业大赛创新赛优秀奖</h3>
+              <p>
+                <i class="far fa-calendar-check"></i>
+                南开大学第七届"校长杯"大赛
+              </p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="cert-info">
+              <h3>南开大学第七届"校长杯"创新创业大赛创业赛优秀奖</h3>
+              <p>
+                <i class="far fa-calendar-check"></i>
+                南开大学第七届"校长杯"大赛
+              </p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fas fa-fire"></i>
+            </div>
+            <div class="cert-info">
+              <h3>2025南开大学"火山杯"创意奖</h3>
+              <p>
+                <i class="far fa-calendar-check"></i>
+                2025年 | 南开大学
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="resume-footer">
+    <div class="footer-content">
+      <p class="copyright">© 2025 柳昕彤 - 个人简历 | 最后更新：2025.11.19</p>
+      <button class="print-btn" onclick="window.print()">
+        <i class="fas fa-print"></i>
+        打印简历
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
